@@ -1,23 +1,103 @@
+/* Global styling */
 * {
-    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box; 
 }
 
-/*Classes
-Choices
-Hide
-Scores
-Start
-Timer
-Wrapper
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    justify-content: center;
+}
 
-/*IDs
-Choices
-End-screen
-Final-score
-Questions
-Question-title
-Start
-Start-screen
-Time
+button{
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Class styling */
+.choices {
+    padding: 10px;
+    background-color: olivedrab;
+    color: white;
+}
+
+/*.hide {
+
+}*/
+
+.scores {
+}
+
+.start h1 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    font-size: 40px;
+    
+}
+
+.start p {
+    padding: 10px 200px;
+    font-size: 20px;
+}
+
+.timer {
+
+}
+
+.wrapper {
+    width: auto;
+    margin: auto;
+}
 
 
+/*ID styling */
+#choices {
+
+}
+
+#end-screen {
+
+}
+
+#final-score {
+
+}
+
+#questions {
+
+}
+
+#question-title {
+
+}
+
+#start {
+   display: block;
+   align-items: center;
+}
+
+#start-screen {
+    display: block;
+    align-items: center;
+}
+
+#time {
+
+}

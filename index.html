@@ -5,36 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Coding Quiz</title>
+    <title>Code Quiz</title>
 </head>
 
 <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+    <!-- Header -->
+    <header>
+        <!-- Left side: Highscores -->
+        <div class="scores"><a href="highscores.html">View Highscores</a></div>
+        <!-- Right side: Timer -->
+        <div class="timer">Time: <span id="time">0</span></div>
+    </header>
 
-    <div class="timer">Time: <span id="time">0</span></div>
-
+    <!-- Game -->
     <div class="wrapper">
+
+        <!-- Start Screen -->
         <div id="start-screen" class="start">
             <h1>Coding Quiz Challenge</h1>
             <p>
-                Try to answer the following code-related questions within the time limit. Keep in mind that inccorect answers will penalize your score/time by 15 seconds!
+                Try to answer the following code-related questions within the time limit. Keep in mind that inccorect answers will penalize your score/time by ten seconds!
             </p>
             <button id="start">Start Quiz!</button>
         </div>
 
+        <!-- Actual Game -->
         <div id="questions" class="hide">
             <h2 id="question-title"></h2>
             <div id="choices" class="choices"></div>
         </div>
 
+        <!-- End Screen -->
         <div id="end-screen" class="hide">
             <h2>All Done!</h2>
             <p>Your final score is <span id="final-score"></span></p>
         </div>
-
-
     </div>
 
+    <!-- Footer -->
+    <Footer> 
+        <p>Trying my best🫠 by Anjali Roland</p>
+    </footer>
+
+<!-- Connection to JavaScript -->
     <script src="./assets/js/script.js"></script>
     
 </body>
