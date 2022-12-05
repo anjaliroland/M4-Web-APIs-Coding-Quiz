@@ -1,5 +1,5 @@
 # M4-Web-APIs-Coding-Quiz
-<!--
+
 ## Description
 
  This week we were tasked with creating a timed quiz about coding, that can also store highscores. Using what we have learned the past few weeks I was able to use HTMl, CSS, and JavaScript to create a dynamically updating app that meets the following criteria:
@@ -21,7 +21,7 @@
  ## Links
 
 Repository: [
-    ( )]
+    (https://github.com/anjaliroland/M4-Web-APIs-Coding-Quiz)]
 
 Deployed Application: [
-    ( )]
+    (https://anjaliroland.github.io/M4-Web-APIs-Coding-Quiz/)]
