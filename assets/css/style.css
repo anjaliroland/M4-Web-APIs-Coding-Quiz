@@ -1,4 +1,4 @@
-/* global styling */
+/* Global Styling */
 * {
     font-family:Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ header{
 }
 
 
-/* element specific styling */
+/* Element Specific Styling */
 header button {
     margin-top: 12px;
 }
@@ -39,7 +39,7 @@ ul {
     flex-direction: column;
     align-items: baseline;
     padding-left: 50px;
-   }
+}
 
 li {
     margin-bottom: 10px;
@@ -58,7 +58,7 @@ li {
     justify-content: center;
 }
 
-/* class styling */
+/* Class Styling */
 .button{
     background:white;
     border-radius: 3px;
@@ -93,7 +93,7 @@ li {
 }
 
 
-/* media queries */
+/* Media Queries */
 @media only screen and (max-width: 960px) {
     body {
       background-color: papayawhip;
