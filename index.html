@@ -1,54 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+<html>
+  <head>
     <title>Code Quiz</title>
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
 
-<body>
-    <!-- Header -->
+  <body>
     <header>
-        <!-- Left side: Highscores -->
-        <div class="scores"><a href="highscores.html">View Highscores</a></div>
-        <!-- Right side: Timer -->
-        <div class="timer">Time: <span id="time">0</span></div>
+        <!-- left side: highscores -->
+        <div>  
+            <button class="button" id="score-check">View Highscores</button>
+        </div>
+        <!-- right side: timer -->
+        <div> 
+            <p id="timer"> Time: 80 s</p>
+        </div>
     </header>
 
-    <!-- Game -->
-    <div class="wrapper">
 
-        <!-- Start Screen -->
-        <div id="start-screen" class="start">
+    <div class="main">
+    <!-- start page -->
+        <section class="start" id="start">
             <h1>Coding Quiz Challenge</h1>
-            <p>
-                Try to answer the following code-related questions within the time limit. Keep in mind that inccorect answers will penalize your score/time by ten seconds!
-            </p>
-            <button id="start">Start Quiz!</button>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mid that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button class="button" id="startBtn">Start Quiz</button>
+        </section>
+          
+    <!-- game page(s) -->
+            <section class="gamePage" id="gamePage">
+               
+        <!-- questions -->
+            
+                <h2 id ="question-id">Ask the question</h2>
+                <ul>
+                    <li><button class ="button choices" id="answer-1" value="a">Answer1</button></li>
+                    <li><button class ="button choices" id="answer-2" value="b">Answer2</button></li>
+                    <li><button class ="button choices" id="answer-3" value="c">Answer3</button></li>
+                    <li><button class ="button choices" id="answer-4" value="d">Answer4</button></li>
+                </ul>
+            
+
+        <!-- answer check -->
+                <div id="check">
+                    <p>Correct or Wrong</p>
+                </div>    
+            </section>
+
+
+    <!-- score page -->
+            <section class="submitPage" id="submitPage">
+                <h2 id="finish">All Done!</h2>
+                <p id = "totalScore">Your final score is: </p>
+                <p>Enter initials
+                    <input id="initials">
+                    <button class="button" id="submitBtn">Submit</button>
+                </p>
+            </section>
+
+
+    <!-- highscore page -->
+            <section class="highscorePage" id ="highscorePage">
+                <div>
+                    <h2>High Scores</h2>
+                    <div id="record-score"><p>Your record</p></div><br><br>
+                    <div>
+                        <button class="button" id="backBtn">Go back</button>
+                        <button class="button" id="clearBtn">Clear Highscores</button>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <!-- Actual Game -->
-        <div id="questions" class="hide">
-            <h2 id="question-title"></h2>
-            <div id="choices" class="choices"></div>
-        </div>
-
-        <!-- End Screen -->
-        <div id="end-screen" class="hide">
-            <h2>All Done!</h2>
-            <p>Your final score is <span id="final-score"></span></p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <Footer> 
+    <!-- footer -->
+    <footer>
         <p>Trying my best🫠 by Anjali Roland</p>
     </footer>
+    <!-- connection to JavaScript -->
+    <script src="assets/js/script.js"></script>
 
-<!-- Connection to JavaScript -->
-    <script src="./assets/js/script.js"></script>
-    
 </body>
 </html>

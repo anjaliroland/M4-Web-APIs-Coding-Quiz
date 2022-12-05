@@ -1,27 +1,15 @@
-/* Global styling */
+/* global styling */
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    box-sizing: border-box; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
-    min-height: auto;
+    min-height: 100vh;
     justify-content: center;
-}
-
-button{
-    align-items: center;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: darkolivegreen;
-    color: white;
+    background-color: papayawhip;
 }
 
 footer {
@@ -29,75 +17,100 @@ footer {
     padding: 10px;
 }
 
-/* Class styling */
-.choices {
-    padding: 10px;
-    background-color: olivedrab;
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: darkolivegreen;
     color: white;
 }
 
-/*.hide {
 
-}*/
-
-.scores {
+/* element specific styling */
+header button {
+    margin-top: 12px;
 }
 
-.start h1 {
-    display: block;
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+   }
+
+li {
+    margin-bottom: 10px;
+}
+
+.gamePage h2 {
     text-align: center;
-    padding: 10px;
-    text-decoration: underline;
-    font-size: 40px;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.start p {
-    padding: 10px 200px;
-    font-size: 20px;
-}
-
-.timer {
-
-}
-
-.wrapper {
-    width: auto;
-    margin: auto;
-}
-
-
-/*ID styling */
-#choices {
-
-}
-
-#end-screen {
-
-}
-
-#final-score {
-
-}
-
-#questions {
-
-}
-
-#question-title {
-
-}
-
-#start {
-   display: block;
-   align-items: center;
-}
-
-#start-screen {
-    display: block;
+.gamePage li {
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
+    justify-content: center;
 }
 
-#time {
+/* class styling */
+.button{
+    background:white;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+.button:hover{
+    background-color: rgb(146, 192, 147);
+    color: white;
+}
 
+.gamePage {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamePage, .submitPage, .highscorePage, #check {
+    display:none;
+}
+
+.main {
+    text-align: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin-left:200px;
+    margin-right:200px;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 960px) {
+    body {
+      background-color: papayawhip;
+    }
+    main {
+        margin-left:50px;
+        margin-right:50px;
+    }
+  }
+
+@media only screen and (max-width: 520px) {
+    body {
+      background-color: papayawhip;
+      font-size: 130%;
+    }
+    main {
+        margin-left:12px;
+        margin-right:12px;
+    }
 }
