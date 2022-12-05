@@ -15,6 +15,8 @@ body {
 footer {
     text-align: center;
     padding: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 header{
@@ -56,6 +58,20 @@ li {
     margin-right: auto;
     align-items: center;
     justify-content: center;
+}
+
+.start button {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.start p {
+    font-size: 28px;
+}
+
+.start h1 {
+    font-size: 42px;
+    text-decoration: underline olive;
 }
 
 /* Class Styling */
