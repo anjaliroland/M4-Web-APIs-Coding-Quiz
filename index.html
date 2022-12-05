@@ -8,12 +8,13 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header>
-        <!-- left side: highscores -->
+        <!-- Left Side: Highscores -->
         <div>  
             <button class="button" id="score-check">View Highscores</button>
         </div>
-        <!-- right side: timer -->
+        <!-- Right Side: Timer -->
         <div> 
             <p id="timer"> Time: 80 s</p>
         </div>
@@ -21,18 +22,18 @@
 
 
     <div class="main">
-    <!-- start page -->
+    <!-- Start Page -->
         <section class="start" id="start">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. Keep in mid that incorrect answers will penalize your score/time by ten seconds!</p>
             <button class="button" id="startBtn">Start Quiz</button>
         </section>
           
-    <!-- game page(s) -->
-            <section class="gamePage" id="gamePage">
+    <!-- Game Page(s) -->
+        <section class="gamePage" id="gamePage">
                
-        <!-- questions -->
-            
+        <!-- Questions -->
+            <div>
                 <h2 id ="question-id">Ask the question</h2>
                 <ul>
                     <li><button class ="button choices" id="answer-1" value="a">Answer1</button></li>
@@ -40,44 +41,42 @@
                     <li><button class ="button choices" id="answer-3" value="c">Answer3</button></li>
                     <li><button class ="button choices" id="answer-4" value="d">Answer4</button></li>
                 </ul>
+            </div>
             
-
-        <!-- answer check -->
-                <div id="check">
-                    <p>Correct or Wrong</p>
-                </div>    
-            </section>
-
-
-    <!-- score page -->
-            <section class="submitPage" id="submitPage">
-                <h2 id="finish">All Done!</h2>
-                <p id = "totalScore">Your final score is: </p>
-                <p>Enter initials
-                    <input id="initials">
-                    <button class="button" id="submitBtn">Submit</button>
-                </p>
-            </section>
+        <!-- Answer Check -->
+            <div id="check">
+                <p>Correct or Wrong</p>
+            </div>    
+        </section>
 
 
-    <!-- highscore page -->
-            <section class="highscorePage" id ="highscorePage">
-                <div>
-                    <h2>High Scores</h2>
-                    <div id="record-score"><p>Your record</p></div><br><br>
-                    <div>
-                        <button class="button" id="backBtn">Go back</button>
-                        <button class="button" id="clearBtn">Clear Highscores</button>
-                    </div>
-                </div>
-            </section>
-        </div>
+    <!-- Score Page -->
+        <section class="submitPage" id="submitPage">
+            <h2 id="finish">All Done!</h2>
+            <p id = "totalScore">Your final score is: </p>
+            <p>Enter initials <input id="initials">
+                <button class="button" id="submitBtn">Submit</button>
+            </p>
+        </section>
 
-    <!-- footer -->
+
+    <!-- Highscore Page -->
+        <section class="highscorePage" id ="highscorePage">
+            <h2>High Scores</h2>
+            <div id="record-score"><p>Your record</p></div><br><br>
+            <div>
+                <button class="button" id="backBtn">Go back</button>
+                <button class="button" id="clearBtn">Clear Highscores</button>
+            </div>
+        </section>
+
+
+    <!-- Footer -->
     <footer>
         <p>Trying my best🫠 by Anjali Roland</p>
     </footer>
-    <!-- connection to JavaScript -->
+
+    <!-- Connection to JavaScript -->
     <script src="assets/js/script.js"></script>
 
 </body>
