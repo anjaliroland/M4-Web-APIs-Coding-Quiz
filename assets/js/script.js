@@ -26,7 +26,7 @@
         */ 
 
 
-//questions array and question related variables
+// Questions array and question related variables
 var questionSource = [
     {
         question: "What is the first index of an array?",
